@@ -12,18 +12,226 @@
 방송에 관심있었던 여러 학우들의 지원바랍니다.</p>
 
 <ul>
-<li><b>모집 기간 :</b> 3월 2일 ~ 3월 11일</li>
-<li><b>모집 분야 :</b> 아나운서, PD, 엔지니어</li>
-<li><b>지원 방법 :</b> 양식 작성 후 이메일 접수</li>
-<em>지원서 양식은 교내 방송국 홈페이지 공지 게시판에 있습니다.</em>
+    <li><b>모집 기간 :</b> 3월 2일 ~ 3월 11일</li>
+    <li><b>모집 분야 :</b> 아나운서, PD, 엔지니어</li>
+    <li><b>지원 방법 :</b> 양식 작성 후 이메일 접수</li>
+    <em>지원서 양식은 교내 방송국 홈페이지 공지 게시판에 있습니다.</em>
 </ul>
 
 <h3>혜택</h3>
 <ol type="a">
-<li>수습기자 활동 중 소정의 활동비 지급</li>
+    <li>수습기자 활동 중 소정의 활동비 지급</li>
 <li>정기자로 진급하면 장학금 지급</li>
 </ol>
 
 <img src= "/frontend/html/img/mic.jpg" alt="수습국원모집">
+
+<!--
+에밋(Emmet)
+
+4행(tr) 3열(td)
+table > ( tr > td * 3) * 3
+
+자식     >
+형제     +
+상위     ^
+컨텐츠   {}
+일련번호  $
+반복     *
+그룹     ()
+
+table(tr>th{제목}+td*3{$컨텐츠})*4
+
+<요소 속성 = "속성값">
+
+table>caption+(tr>td*4)*5
+
+-->
+
+<table border="2px" width="100%">
+
+    <caption>선물용과 가정용 상품 구성</caption>
+    <thead>
+        <tr>
+            <th>용도</th>
+            <th>중량</th>
+            <th>갯수</th>
+            <th>가격</th>
+        </tr>
+    </thead>
+    </tr>
+
+ <tbody>
+    
+    <tr>
+        <td rowspan="2">선물용</td>
+        <td>3kg</td>
+        <td>11과~16과</td>
+        <td>35,000원</td>
+    </tr>
+
+    <tr>
+        
+        <td>5kg</td>
+        <td>18과~26과</td>
+        <td>52,000원</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">가정용</td>
+        <td>3kg</td>
+        <td>11과~16과</td>
+        <td>30,000원</td>
+    </tr>
+
+    <tr>
+        
+        <td>5kg</td>
+        <td>18과~26과</td>
+        <td>47,000원</td>
+    </tr>
+ </tbody>
+
+</table>
+<!--
+  단위
+  % : 가변길이
+        웹 브라우저의 창의 크기를 기준으로 크기를 결정
+  px : 고정길이
+        픽셀의 크기만큼 크기를 표시
+
+  width 너비 height 높이
+
+  width , height 중 하나만 지정 해도 나머지 속성은 자동으로 비율을 계산
+-->
+<a href="http://naver.com">
+<img src="/frontend/html/img/salad.jpg" alt="샐러드" width="450">
+</a>
+
+<hr>
+<h1>링크</h1>
+<a href="/frontend/html/레드향.html" target="_blank">레드향</a>
+<h1>링크</h1>
+<a href="http://www.naver.com" target="_blank">네이버</a>
+
+<hr>
+<h1>오디오와 비디오</h1>
+<audio src="/frontend/html/medias/spring.mp3" controls>오디오</audio>
+<p>
+
+</p>
+<video src="/frontend/html/medias/flight.mp4" width="700"controls>비디오</video>
+
+<hr>
+<!--
+a: 다른 문서 , 다른 사이트로 연결해주는 기능
+target : 어디에 문서를 출력할지 지정
+         (기본값은 salf이므로 현재 페이지에서 보여줌)
+-->
+
+<hr>
+<h1>pdf파일 삽입하기</h1>
+<object data="/frontend/html/pdf/product.pdf" 
+        width="700" 
+        height="500"
+        type="application/pdf"> 
+</object>
+<hr>
+
+<!--
+이미지 삽입하기
+-->
+<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F421%2F2026%2F01%2F05%2F0008695840_001_20260105115212481.jpg&type=sc960_832">
+
+<h1>입력양식</h1>
+<form action="/frontend/html/레드향.html">
+    <fieldset>
+        <legend>상품 선택</legend>
+        이름 : <input type="text" name="name"><br>
+        비밀번호 : <input type="password" name="password"><br>
+        이름 : <input type="text" name="name">
+        취미 <br>
+        <input type="checkbox" name="" id=""> 농구
+        <input type="checkbox" name="" id=""> 축구
+        <input type="checkbox" name="" id=""> 배구
+    </fieldset>
+    <fieldset>
+        <legend>배송정보</legend>
+    </fieldset>
+    <input type="submit" value="전송">
+
+</form>
+
+
+<table border="2px">
+    <tr>
+        <th colspan="3">제목</th>
+        
+        <td>3컨텐츠</td>
+    </tr>
+    <tr>
+        <th rowspan="2">제목</th>
+        <td>1컨텐츠</td>
+        <td>2컨텐츠</td>
+        <td>3컨텐츠</td>
+    </tr>
+    <tr>
+        
+        <td>1컨텐츠</td>
+        <td>2컨텐츠</td>
+        <td>3컨텐츠</td>
+    </tr>
+    <tr>
+        <th>제목</th>
+        <td>1컨텐츠</td>
+        <td>2컨텐츠</td>
+        <td>3컨텐츠</td>
+    </tr>
+</table>
+
+
+
+<table border="1px">
+  <caption>
+    Front-end web developer course 2021
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Person</th>
+      <th scope="col">Most interest in</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Chris</th>
+      <td>HTML tables</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th scope="row">Dennis</th>
+      <td>Web accessibility</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th scope="row">Sarah</th>
+      <td>JavaScript frameworks</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <th scope="row">Karen</th>
+      <td>Web performance</td>
+      <td>36</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row" colspan="2">Average age</th>
+      <td>33</td>
+    </tr>
+  </tfoot>
+</table>
+
+
 </body>
 </html>
