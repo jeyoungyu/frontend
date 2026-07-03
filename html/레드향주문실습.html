@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #memo{
+            width: 200px;
+            height: 100px;
+        }
+
+        #form2{
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <form>
+        <fieldset>  
+            <legend>상품 선택</legend>
+            <h4>주문할 상품을 선택해 주세요.</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" name="gift3"> 선물용 3kg 
+                    <input type="number" name="" id="number"
+                     max="5" min="1" step="">개 (최대 5개)
+                </li>
+                <li>
+                    <input type="checkbox" name="gift5"> 선물용 5kg
+                    <input type="number" name="" id="number"
+                     max="3" min="1" step="">개 (최대 3개)
+                </li>
+                <li>
+                    <input type="checkbox" name="home3"> 가정용 3kg 
+                    <input type="number" name="" id="number"
+                     max="5" min="1" step="">개 (최대 5개)
+                </li>
+                <li>
+                    <input type="checkbox" name="home5"> 가정용 5kg
+                    <input type="number" name="" id="number"
+                     max="3" min="1" step="">개 (최대 3개)
+                </li>
+            </ul>
+            <h4>포장 선택</h4>
+            <ul>
+                <li>
+                    <input type="radio" name="y"> 선물 포장
+                </li>
+                <li>
+                    <input type="radio" name="n"> 선물 포장 안 함
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <form2>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    이름 <input type="text" name="name">
+                </li>
+                <li>
+                    배송 주소 <input type="text" name="address">
+                </li>
+                <li>
+                    이메일 <input type="email" name="email">
+                </li>
+                <li>
+                    연락처 <input type="tel" name="number">
+                </li>
+                <li>
+                    날짜 선택<input type="date" name="date">(주문일로부터 최소 3일 이후)
+                </li>
+                <li>
+                    메모<input type="text" name="memo" id="memo">
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+    </form2>
+
+</body>
+</html>
