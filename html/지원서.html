@@ -18,32 +18,40 @@
     </style>
 </head>
 <body>
-    <h1>프런트엔드 개발자 지원서</h1>
+    <h1 style="color: red;">프런트엔드 개발자 지원서</h1>
     HTML , CSS , Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.
 
     <hr>
-    <form>
+     <!--
+    action : 요청할 페이지 주소
+             비어 있는 경우 자기 자신을 다시 요청
+    -->
+    <form action="" method="get">
         <h3>개인정보</h3>
         <ul>
+            
             <li>
                 <label for="name">이름</label>
-                    <input id="name" type="text" placeholder="공백없이 입력하세요"><br>
+                    <input id="name" type="text" placeholder="공백없이 입력하세요" name="name" value=""><br>
             </li>
             <li>
                 <label for="num">연락처</label>
-                    <input id="num" type="text"><br>
+                    <input id="num" type="text" name="tel" value=""><br>
             </li>    
         </ul>
+
         <h3>지원 분야</h3>
+
         <ul>
             <li>
-                <input type="radio" name="web_P" value="1" id=""> 웹 퍼블리싱<br>
+                <!--name를 같게 해야 중복 선택이 안됨-->
+                <input type="radio" name="field" value="1" id=""> 웹 퍼블리싱<br>
             </li>
             <li>
-                <input type="radio" name="web_A" value="1" id=""> 웹 애플리케이션 개발<br>
+                <input type="radio" name="field" value="2" id=""> 웹 애플리케이션 개발<br>
             </li>
             <li>
-                <input type="radio" name="B" value="1" id=""> 개발 환경 개선
+                <input type="radio" name="field" value="3" id=""> 개발 환경 개선
             </li>
         </ul>
 
@@ -51,6 +59,7 @@
         <input type="text" name="why" id="why" placeholder="본사 지원 동기를 간략히 써 주세요." autofocus><br>
         <input type="submit" value="접수하기">
         <input type="reset" value="다시쓰기">
+        <!--확실하게 구분하기 위해 input보다는 버튼을 사용-->
 
     </form>
     
