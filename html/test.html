@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.addEventListener('load' , ()=>{
+            let btn = document.querySelector('.btn')
+            btn.addEventListener('click' , ()=>{
+                let box = document.querySelector('.box')
+                box.innerHTML = '고생하셨습니다';
+            })
+        })
+    </script>
+</head>
+<body>
+    <button class="btn">클릭</button>
+    <div class="box"></div>
+</body>
+</html>
